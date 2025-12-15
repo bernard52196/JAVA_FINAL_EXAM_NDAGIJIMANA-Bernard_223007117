@@ -8,7 +8,7 @@ public class DatabaseConnection {
     // EDIT THESE to match your MySQL user/password
     private static final String DB_URL = "jdbc:mysql://localhost:3306/health?serverTimezone=UTC";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = ""; // set your password if any
+    private static final String DB_PASSWORD = ""; 
 
     static {
         try {
@@ -23,3 +23,4 @@ public class DatabaseConnection {
         return DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
     }
 }
+
